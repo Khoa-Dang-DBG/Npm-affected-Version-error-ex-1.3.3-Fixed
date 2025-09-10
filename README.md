@@ -23,7 +23,7 @@ It is intended as an example setup to detect and block malicious npm packages du
 /project/frontend
 ├── .pnpmfile.cjs
 └── malware_predictions.json
-```bash
+```
 
 Install dependencies
 From inside the frontend folder, run:

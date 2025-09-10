@@ -27,8 +27,9 @@ It is intended as an example setup to detect and block malicious npm packages du
 
 Install dependencies
 From inside the frontend folder, run:
-
+```bash
 pnpm install
+```
 
 During installation, pnpm will use .pnpmfile.cjs to check all resolved dependencies against malware_predictions.json.
 
@@ -46,6 +47,7 @@ If malware is found, the installation fails with an error message.
 
 If no dependencies match the malware list →
 No malware detected in dependencies.
+
 If a dependency matches →
 Malware detected in the following packages:
 - some-package[1.3.3]: MALWARE

@@ -1,11 +1,3 @@
-This repository demonstrates how to use .pnpmfile.cjs hooks to scan installed dependencies against a known list of malware-affected npm package versions.
-
-It includes:
-
-.pnpmfile.cjs → adds a post-resolution hook (afterAllResolved) to scan dependencies.
-
-malware_predictions.json → JSON file containing flagged packages/versions.
-
 # Npm-affected-Version-error-ex-1.3.3-Fixed
 
 This repository demonstrates how to integrate a **malware scan into `pnpm install`** using a custom `.pnpmfile.cjs` hook and a JSON-based malware list.  
@@ -49,7 +41,7 @@ Wildcard match: package_name[*]
 If malware is found, the installation fails with an error message.
 
 
-✅ Expected Behavior
+## ✅ Expected Behavior
 
 If no dependencies match the malware list →
 No malware detected in dependencies.
@@ -60,7 +52,7 @@ Malware detected in the following packages:
 The installation will abort.
 
 
-📌 Notes
+## 📌 Notes
 
 This setup works in Node.js 16 (uses https or local JSON).
 

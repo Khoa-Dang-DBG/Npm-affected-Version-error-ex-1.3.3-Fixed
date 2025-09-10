@@ -6,11 +6,28 @@ It includes:
 
 malware_predictions.json → JSON file containing flagged packages/versions.
 
-📥 Setup
+# Npm-affected-Version-error-ex-1.3.3-Fixed
 
-Download both files
-Copy the following files into your project’s frontend folder:
+This repository demonstrates how to integrate a **malware scan into `pnpm install`** using a custom `.pnpmfile.cjs` hook and a JSON-based malware list.  
+It is intended as an example setup to detect and block malicious npm packages during dependency installation.
 
+---
+
+## 📂 Repository Contents
+
+- **`.pnpmfile.cjs`**  
+  Adds a post-resolution hook (`afterAllResolved`) that scans dependencies against a malware list.  
+
+- **`malware_predictions.json`**  
+  Contains a list of flagged packages and versions that should be blocked.  
+
+---
+
+## 🚀 Setup
+
+1. Copy the two files into your project’s `frontend` folder:
+
+```bash
 /project/frontend
 ├── .pnpmfile.cjs
 └── malware_predictions.json

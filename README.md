@@ -46,10 +46,10 @@ If malware is found, the installation fails with an error message.
 ## ✅ Expected Behavior
 
 If no dependencies match the malware list →
-No malware detected in dependencies.
+✅ No malware detected in dependencies.
 
 If a dependency matches →
-Malware detected in the following packages:
+❌ Malware detected in the following packages:
 - some-package[1.3.3]: MALWARE
 
 The installation will abort.
